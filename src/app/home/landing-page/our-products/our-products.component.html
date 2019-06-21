@@ -1,0 +1,22 @@
+<section>
+  <div class="row no-gutters no-padding">
+    <h1 class="text-success text-center pt-4 w-100">
+      Our products
+    </h1>
+  </div>
+  <div class="row no-gutters no-padding mt-4">
+    <div class="col-4" *ngFor="let product of products">
+      <div class="row no-gutters">
+        <div class="col-12 d-flex flex-row justify-content-center">
+          <div
+            class="product rounded-circle shadow"
+            [style.backgroundImage]="'url(' + product.imageUrl + ')'"
+          ></div>
+        </div>
+        <div class="col-12 mt-4">
+          <h3 class="text-center">{{ product.name }}</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
