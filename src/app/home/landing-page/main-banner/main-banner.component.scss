@@ -1,0 +1,9 @@
+.main-banner {
+  background-image: url('https://www.wholehealthllc.com/wp-content/uploads/2013/10/fruits-and-vegetables-wallpaper_1600x1200_849091.jpg');
+  background-repeat: no-repeat, repeat;
+  &-content {
+    height: 480px;
+    background: #00000066;
+    margin-top: 3.5em;
+  }
+}
