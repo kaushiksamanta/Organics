@@ -2,6 +2,17 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 7.3.8.
 
+## Docker
+Prod -
+```
+docker build -t organic-website:prod-f prod.Dockerfile .
+```
+```
+docker run -it -p 80:80 organic-website:prod
+```
+
+Local with watch changes
+```docker-compose up```
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
