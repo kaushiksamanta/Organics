@@ -1,0 +1,11 @@
+version: '3'
+services:
+  dev:
+    image: organic-website:local-watch
+    volumes:
+      - .:/usr/src/app
+      - /usr/src/app/node_modules
+    working_dir: /usr/src/app
+    command: npm start
+    ports:
+      - 4200:4200

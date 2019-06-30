@@ -1,5 +1,17 @@
-FROM node:alpine
-RUN apk update && apk add --no-cache make git
+FROM node:12.5.0
 
-WORKDIR /app
+RUN mkdir -p /usr/src/app
 
+WORKDIR /usr/src/app
+
+RUN npm config set unsafe-perm true && \
+    npm i -g @angular/cli && \
+    npm i -g node-sass
+
+COPY . .
+
+RUN npm ci
+
+EXPOSE 4200
+
+CMD ["npm", "start"]
