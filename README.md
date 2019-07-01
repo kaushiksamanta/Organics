@@ -5,13 +5,14 @@ This project was generated with [Angular CLI](https://github.com/angular/angular
 ## Docker
 Prod -
 ```
-docker build -t organic-website:prod-f prod.Dockerfile .
+docker build -t organic-website:prod -f prod.Dockerfile .
 ```
 ```
 docker run -it -p 80:80 organic-website:prod
 ```
 
 Local with watch changes
+```docker build -t organic-website:local-watch -f local-watch.Dockerfile .```
 ```docker-compose up```
 ## Development server
 

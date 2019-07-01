@@ -137,5 +137,8 @@
       }
     }
   },
-  "defaultProject": "organic-food"
+  "defaultProject": "organic-food",
+  "cli": {
+    "defaultCollection": "@ngrx/schematics"
+  }
 }
